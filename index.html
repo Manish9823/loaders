@@ -24,7 +24,10 @@
 
         .container {
             display: flex;
+            width: 100%;
             gap: 3rem;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
 
         .block {
@@ -51,17 +54,21 @@
         <h3 class="heading">Loaders</h5>
     </div>
     <div class="container">
-        <div class="block" id="spinner">
+        <div class="block" id="spinner1">
             <div class="name">Spinner</div>
             <iframe src="./src/spinner/spinner.html"></iframe>
         </div>
-        <div class="block" id="spinner">
+        <div class="block" id="spinner2">
             <div class="name">Two Spinner</div>
             <iframe src="./src/two-spinner/index.html"></iframe>
         </div>
-        <div class="block" id="bar">
+        <div class="block" id="bar1">
             <div class="name">Progress Bar</div>
             <iframe src="./src/progress-bar/index.html"></iframe>
+        </div>
+        <div class="block" id="bar2">
+            <div class="name">Continue Bar</div>
+            <iframe src="./src/continue-bar/index.html"></iframe>
         </div>
     </div>
 </body>
