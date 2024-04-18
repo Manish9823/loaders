@@ -9,7 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loaders</title>
+    <title>Classic</title>
     <style>
         body {
             padding-inline: 1.5rem;
@@ -22,35 +22,27 @@
             font-size: 30px;
         }
 
-        .row {
+        .container {
             display: flex;
             width: 100%;
             gap: 3rem;
             justify-content: space-between;
             flex-wrap: wrap;
-            margin-bottom: 50px;
-        }
-
-        .container {
-            width: 100%;
-            height: 100%;
-        }
-
-        .iframe-container {
-            width: 100%;
-            height: 80vh;
         }
 
         .block {
             display: flex;
             flex-direction: column;
             gap: 0.8rem;
+            position: relative;
         }
 
         .name {
             font-family: "Poppins", sans-serif;
             font-weight: 300;
             font-style: normal;
+            position: absolute;
+            padding: 5px;
         }
 
         iframe {
@@ -62,35 +54,24 @@
 
 <body>
     <div>
-        <h3 class="heading">Loaders</h3>
+        <h3 class="heading">Classic</h5>
     </div>
-    <div class="row">
-        <div class="block" id="spinner1">
-            <div class="name">Spinner</div>
-            <iframe src="./src/spinner/spinner.html"></iframe>
+    <div class="container">
+        <div class="block" id="one">
+            <div class="name">#1</div>
+            <iframe src="./1/index.html"></iframe>
         </div>
-        <div class="block" id="spinner2">
-            <div class="name">Two Spinner</div>
-            <iframe src="./src/two-spinner/index.html"></iframe>
+        <div class="block" id="two">
+            <div class="name">#2</div>
+            <iframe src="./2/index.html"></iframe>
         </div>
-        <div class="block" id="bar1">
-            <div class="name">Progress Bar</div>
-            <iframe src="./src/progress-bar/index.html"></iframe>
+        <div class="block" id="one">
+            <div class="name">#1</div>
+            <iframe src="./1/index.html"></iframe>
         </div>
-        <div class="block" id="bar2">
-            <div class="name">Continue Bar</div>
-            <iframe src="./src/continue-bar/index.html"></iframe>
-        </div>
-    </div>
-
-    <hr>
-    <!-- CSS-Loaders-Collection -->
-    <div class="CSS-Loaders-Collection">
-        <h3 class="heading">
-            CSS-Loaders-Collection
-        </h3>
-        <div class="container">
-            <iframe class="iframe-container" src="./src/CSS-Loaders-Collection/Classic/index.html"></iframe>
+        <div class="block" id="one">
+            <div class="name">#1</div>
+            <iframe src="./1/index.html"></iframe>
         </div>
     </div>
 </body>
