@@ -1,0 +1,98 @@
+<style>
+    /* body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        gap: 10px;
+    }
+
+    .loading {
+        font-size: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .box {
+        margin-top: 10px;
+        position: relative;
+    }
+
+    .bar1 {
+        position: absolute;
+        height: 3px;
+        width: 0px;
+        background: black;
+        animation: increase 2s infinite;
+        align-self: flex-start;
+        z-index: 0;
+        width: 150px;
+    }
+
+    .bar2 {
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        padding-inline: 10px;
+        z-index: 1;
+        width: 125px;
+    }
+
+    .one {
+        height: 3px;
+        width: 7px;
+        background: #fff;
+    }
+
+    @keyframes increase {
+        0% {
+            width: 0;
+        }
+
+        20% {
+            width: 30px;
+        }
+
+        40% {
+            width: 60px;
+        }
+
+        60% {
+            width: 90px;
+        }
+
+        80% {
+            width: 120px;
+        }
+
+        100% {
+            width: 150px;
+        }
+    }
+</style>
+
+<div class="container">
+    <div class="loading">
+        Loading...
+        <div class="box">
+            <div class="bar1"></div>
+            <div class="bar2">
+                <div class="one"></div>
+                <div class="one"></div>
+                <div class="one"></div>
+                <div class="one"></div>
+            </div>
+        </div>
+    </div>
+</div>
