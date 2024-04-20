@@ -1,0 +1,96 @@
+<style>
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .box {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+    }
+
+    .loading {
+        font-size: 30px;
+        animation: fade 2s infinite;
+        transition: 1s all;
+    }
+
+    .one,
+    .two,
+    .three {
+        font-size: 30px;
+        opacity: 0;
+        font-family: serif;
+    }
+
+    .one {
+        animation: one 1s infinite;
+    }
+
+    .two {
+        animation: two 1s infinite;
+    }
+
+    .three {
+        animation: three 1s infinite;
+    }
+
+    @keyframes one {
+        25% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        75% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes two {
+        50% {
+            opacity: 1;
+        }
+
+        75% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes three {
+        75% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+
+<div class="container">
+    <div class="box">
+        <div class="loading">Loading</div>
+        <div class="one">.</div>
+        <div class="two">.</div>
+        <div class="three">.</div>
+    </div>
+</div>
