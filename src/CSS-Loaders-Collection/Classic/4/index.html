@@ -18,7 +18,7 @@
     }
 
     .loading {
-        font-size: 30px;
+        font-size: 40px;
         animation: fade 2s infinite;
         transition: 1s all;
     }
@@ -26,26 +26,33 @@
     .one,
     .two,
     .three {
-        font-size: 30px;
+        font-size: 60px;
         opacity: 0;
         font-family: serif;
     }
 
     .one {
         animation: one 1s infinite;
+        animation-timing-function: steps-end;
     }
 
     .two {
         animation: two 1s infinite;
+        animation-timing-function: steps-end;
     }
 
     .three {
         animation: three 1s infinite;
+        animation-timing-function: steps-end;
     }
 
     @keyframes one {
+        0% {
+            opacity: 0;
+        }
+
         25% {
-            opacity: 1;
+            opacity: 0;
         }
 
         50% {
@@ -62,8 +69,12 @@
     }
 
     @keyframes two {
+        25% {
+            opacity: 0;
+        }
+
         50% {
-            opacity: 1;
+            opacity: 0;
         }
 
         75% {
@@ -76,8 +87,16 @@
     }
 
     @keyframes three {
+        25% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
         75% {
-            opacity: 1;
+            opacity: 0;
         }
 
         100% {
