@@ -1,0 +1,50 @@
+<style>
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .box {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+    }
+
+    .loading {
+        font-size: 30px;
+        animation: fade 2s infinite;
+        transition: 1s all;
+        display: flex;
+    }
+
+    .one,
+    .two,
+    .three {
+        font-size: 30px;
+        font-family: serif;
+    }
+</style>
+
+<div class="container">
+    <div class="box">
+        <div class="loading">
+            <p class="L">L</p>
+            <p class="o">o</p>
+            <p class="a">a</p>
+            <p class="d">d</p>
+            <p class="i">i</p>
+            <p class="n">n</p>
+            <p class="g">g</p>
+        </div>
+        <div class="one">.</div>
+        <div class="two">.</div>
+        <div class="three">.</div>
+    </div>
+</div>
