@@ -12,39 +12,55 @@
     }
 
     .box {
+        position: relative;
         display: flex;
-        align-items: baseline;
+        /* background: red; */
+        overflow: hidden;
         gap: 10px;
+        width: 170;
+        height: 40px;
+        font-size: 30px;
+        margin: 0;
     }
 
-    .loading {
-        font-size: 30px;
-        animation: fade 2s infinite;
-        transition: 1s all;
-        display: flex;
-    }
-
-    .one,
-    .two,
-    .three {
-        font-size: 30px;
+    .dot {
         font-family: serif;
+    }
+
+    .first,
+    .second {
+        position: absolute;
+        left: 0;
+    }
+
+    .first {
+        left: 0;
+        animation: cycle 2s linear infinite;
+    }
+
+    .second {
+        animation: cycle 2s linear infinite 1s;
+        left: 180px;
+    }
+
+    @keyframes cycle {
+        from {
+            left: 180px;
+        }
+
+        to {
+            left: -180px;
+        }
     }
 </style>
 
 <div class="container">
     <div class="box">
-        <div class="loading">
-            <p class="L">L</p>
-            <p class="o">o</p>
-            <p class="a">a</p>
-            <p class="d">d</p>
-            <p class="i">i</p>
-            <p class="n">n</p>
-            <p class="g">g</p>
+        <div class="first">
+            <div class="loading">Loading <span class="dot">. . .</span></div>
         </div>
-        <div class="one">.</div>
-        <div class="two">.</div>
-        <div class="three">.</div>
+        <div class="second">
+            <div class="loading">Loading <span class="dot">. . .</span></div>
+        </div>
     </div>
 </div>
