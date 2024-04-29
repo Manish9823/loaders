@@ -1,0 +1,220 @@
+<style>
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .box {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+    }
+
+    .loading {
+        font-size: 30px;
+        animation: fade 2s infinite;
+        transition: 1s all;
+        display: flex;
+    }
+
+    .one,
+    .two,
+    .three {
+        font-size: 30px;
+        /* color:#000; */
+        font-family: serif;
+    }
+
+    .L {
+        animation: L 2s infinite;
+    }
+
+    .o {
+        animation: o 2s infinite;
+    }
+
+    .a {
+        animation: a 2s infinite;
+    }
+
+    .d {
+        animation: d 2s infinite;
+    }
+
+    .i {
+        animation: i 2s infinite;
+    }
+
+    .n {
+        animation: n 2s infinite;
+    }
+
+    .g {
+        animation: g 2s infinite;
+    }
+
+    .one {
+        animation: one 2s infinite;
+    }
+
+    .two {
+        animation: two 2s infinite;
+    }
+
+    .three {
+        animation: three 2s infinite;
+    }
+
+    @keyframes L {
+
+        0%,
+        9.09% {
+            color: #000;
+        }
+
+        18.18%,
+        100% {
+            color: #e62020;
+        }
+    }
+
+    @keyframes o {
+
+        0%,
+        18.18% {
+            color: #000;
+        }
+
+        27.27%,
+        100% {
+            color: #e62020;
+        }
+    }
+
+    @keyframes a {
+
+        0%,
+        27.27% {
+            color: #000;
+        }
+
+        36.36%,
+        100% {
+            color: #e62020;
+        }
+    }
+
+    @keyframes d {
+
+        0%,
+        36.36% {
+            color: #000;
+        }
+
+        45.45%,
+        100% {
+            color: #e62020;
+        }
+    }
+
+    @keyframes i {
+
+        0%,
+        45.45% {
+            color: #000;
+        }
+
+        54.54%,
+        100% {
+            color: #e62020;
+        }
+    }
+
+    @keyframes n {
+
+        0%,
+        54.54% {
+            color: #000;
+        }
+
+        63.63%,
+        100% {
+            color: #e62020;
+        }
+    }
+
+    @keyframes g {
+
+        0%,
+        63.63% {
+            color: #000;
+        }
+
+        72.72%,
+        100% {
+            color: #e62020;
+        }
+    }
+
+    @keyframes one {
+
+        0%,
+        72.72% {
+            color: #000;
+        }
+
+        81.81%,
+        100% {
+            color: #e62020;
+        }
+    }
+
+    @keyframes two {
+
+        0%,
+        81.81% {
+            color: #000;
+        }
+
+        90.9%,
+        100% {
+            color: #e62020;
+        }
+    }
+
+    @keyframes three {
+
+        0%,
+        90.9% {
+            color: #000;
+        }
+
+        100% {
+            color: #e62020;
+        }
+    }
+</style>
+
+<div class="container">
+    <div class="box">
+        <div class="loading">
+            <p class="L">L</p>
+            <p class="o">o</p>
+            <p class="a">a</p>
+            <p class="d">d</p>
+            <p class="i">i</p>
+            <p class="n">n</p>
+            <p class="g">g</p>
+        </div>
+        <div class="one">.</div>
+        <div class="two">.</div>
+        <div class="three">.</div>
+    </div>
+</div>
