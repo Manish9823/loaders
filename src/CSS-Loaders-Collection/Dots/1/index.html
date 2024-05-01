@@ -1,0 +1,99 @@
+<style>
+    /* body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+    }
+
+    .loading {
+        display: flex;
+        gap: 12px;
+    }
+
+    /* .loading {
+        font-size: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        animation: fade 2s infinite;
+        transition: 1s all;
+    } */
+
+    .dot {
+        width: 12;
+        height: 12;
+        background: #555;
+        border-radius: 50px;
+        /* visibility: hidden; */
+    }
+
+    .one {
+        animation: one 1.5s infinite;
+    }
+
+    .two {
+        animation: two 1.5s infinite;
+    }
+
+    .three {
+        animation: three 1.5s infinite;
+    }
+
+    @keyframes one {
+
+        0%,
+        25% {
+            visibility: hidden;
+        }
+
+        50%,
+        100% {
+            visibility: visible;
+        }
+
+    }
+
+    @keyframes two {
+
+        0%,
+        50% {
+            visibility: hidden;
+        }
+
+        75%,
+        100% {
+            visibility: visible;
+        }
+    }
+
+    @keyframes three {
+
+        0%,
+        75% {
+            visibility: hidden;
+        }
+
+
+        100% {
+            visibility: visible;
+        }
+    }
+</style>
+
+<div class="container">
+    <div class="loading">
+        <div class="dot one"></div>
+        <div class="dot two"></div>
+        <div class="dot three"></div>
+    </div>
+</div>
