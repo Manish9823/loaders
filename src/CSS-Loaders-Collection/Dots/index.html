@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dots</title>
+    <style>
+        body {
+            padding-inline: 1.5rem;
+        }
+
+        .heading {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 30px;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            gap: 3rem;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .block {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            position: relative;
+        }
+
+        .name {
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            position: absolute;
+            padding: 5px;
+            color: #888;
+        }
+
+        iframe {
+            outline: none;
+            border-radius: 4px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            transition: all 0.5s;
+            border: 0.5px solid #eee;
+        }
+
+        iframe:hover {
+            border: 0.5px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h3 class="heading">Dots</h5>
+    </div>
+    <div class="container">
+        <div class="block" id="one">
+            <div class="name">#1</div>
+            <iframe src="./1/index.html"></iframe>
+        </div>
+    </div>
+</body>
+
+</html>
