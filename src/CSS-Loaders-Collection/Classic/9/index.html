@@ -1,0 +1,88 @@
+<style>
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .box {
+        position: relative;
+        display: flex;
+        /* background: red; */
+        overflow: hidden;
+        gap: 10px;
+        width: 170;
+        height: 40px;
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .dot {
+        font-family: serif;
+    }
+
+    .first,
+    .second,
+    .third,
+    .fourth {
+        position: absolute;
+        left: 0;
+    }
+
+    .first {
+        left: 0;
+        animation: cycle 4s ease-out infinite;
+    }
+
+    .second {
+        color: #8A9B0F;
+        animation: cycle 4s ease-out 1s infinite;
+        left: 180px;
+    }
+
+    .third {
+        color: #C02942;
+        animation: cycle 4s ease-out 2s infinite;
+        left: 360px;
+    }
+
+    .fourth {
+        color: #00A0B0;
+        animation: cycle 4s ease-out 3s infinite;
+        left: 540px;
+    }
+
+
+    @keyframes cycle {
+        from {
+            left: 180px;
+        }
+
+        to {
+            left: -540px;
+        }
+    }
+</style>
+
+<div class="container">
+    <div class="box">
+        <div class="first">
+            <div class="loading">Loading <span class="dot">. . .</span></div>
+        </div>
+        <div class="second">
+            <div class="loading">Loading <span class="dot">. . .</span></div>
+        </div>
+        <div class="third">
+            <div class="loading">Loading <span class="dot">. . .</span></div>
+        </div>
+        <div class="fourth">
+            <div class="loading">Loading <span class="dot">. . .</span></div>
+        </div>
+    </div>
+</div>
