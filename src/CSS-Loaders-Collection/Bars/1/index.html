@@ -1,0 +1,106 @@
+<style>
+    /* body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+    }
+
+    .loading {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* .loading {
+        font-size: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        animation: fade 2s infinite;
+        transition: 1s all;
+    } */
+
+    .bar {
+        width: 15;
+        height: 50;
+        background: #555;
+        /* border-radius: 50px; */
+        /* visibility: hidden; */
+    }
+
+    .one {
+        animation: one 1s infinite ease-in-out;
+    }
+
+    .two {
+        animation: two 1s infinite ease-in-out 1s;
+    }
+
+    .three {
+        animation: three 1s infinite ease-in-out 2s;
+    }
+
+    @keyframes one {
+
+        0%,
+        33% {
+            height: 10;
+        }
+
+        33%,
+        100% {
+            height: 50;
+        }
+
+    }
+
+    @keyframes two {
+
+        0%,
+        33% {
+            height: 50;
+        }
+
+        33%,
+        66% {
+            height: 10;
+        }
+
+        66%,
+        100% {
+            height: 50;
+        }
+    }
+
+    @keyframes three {
+
+        0%,
+        66% {
+            height: 50;
+        }
+
+        66%,
+        100% {
+            height: 10;
+        }
+    }
+</style>
+
+<div class="container">
+    <div class="loading">
+        <div class="bar one"></div>
+        <div class="bar two"></div>
+        <div class="bar three"></div>
+    </div>
+</div>
